@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Music Player</title>
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="icon" href="Media/icon.svg">
+    </head>
+    <body>
+        <div class="app">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <h1>Music Player</h1>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="Media/song-image.png" alt="..." class="song-image">
+            <h2 class="song-name">Open Sky</h2>
+            <audio id="song-audio">
+                <source src="Media/Open Sky.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" min="0" id="progress">
+            <div class="controls">
+                <div class="ctrl-icon" id="ctrl-icon-backward">
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div class="ctrl-icon" id="ctrl-icon-play-pause">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="ctrl-icon" id="ctrl-icon-forward">
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
